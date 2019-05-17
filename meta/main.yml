@@ -14,5 +14,5 @@ galaxy_info:
     - webd
 
 dependencies:
-  - src: https://github.com/dhs-ncats/ansible-role-cyhy-core
+  - src: https://github.com/cisagov/ansible-role-cyhy-core
     name: cyhy_core
