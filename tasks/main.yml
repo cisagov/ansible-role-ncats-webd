@@ -42,7 +42,7 @@
       - python-apscheduler
       - python-eventlet
       - python-schedule
-      - python-gunicorn
+      - gunicorn
 
 - name: Install ncats-webd
   pip:
