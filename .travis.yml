@@ -2,6 +2,7 @@
 dist: xenial
 language: python
 python: 3.7
+# pre-commit hooks can use Docker, so we should go ahead and enable it
 services: docker
 
 env:
@@ -39,6 +40,12 @@ env:
       AqGHDcSY6sNzbMuMQjqIIxduTqlXXYBQBL6I6fTjSltuUKpEYZYY7bjlAPTVu+wJ\
       KfNbRKotCmSxW0Q5XYiJcanIBy5XOX5voK1XD8aPwQD3iSgv6vonMcqHQKwiD0J2\
       9p7OeyWW7TiJDwWihsy13Mrt2TZkf7j3OFw38Kq6384jQ8ozeAfw="
+
+# Cache pip packages and pre-commit plugins to speed up builds
+cache:
+  pip: true
+  directories:
+    - $HOME/.cache/pre-commit
 
 # Install terraform and terraform-doc
 before_install:
