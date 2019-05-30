@@ -20,3 +20,9 @@ def test_packages(host, pkg):
 def test_files(host, f):
     """Test that the expected files and directories are present."""
     assert host.file(f).exists
+
+
+@pytest.mark.parametrize("command", ["gunicorn"])
+def test_commands(host, command):
+    """Test that the expected commands are present."""
+    assert host.exists(command)
