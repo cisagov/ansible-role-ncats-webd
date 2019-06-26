@@ -7,39 +7,31 @@ services: docker
 
 env:
   global:
-    - secure: "I3kXBCObjfmFJgXTMRg5kPlJMFj6mtgBGCVSSULS84k8UVSmInpJeki\
-      8n5jOM9ueSM4s1L4Og4I2CSzwfmvZ2jrUPN95l4UBAAGSejDPuObIcwGB/mTMUvz\
-      VfiheaavDgl3lfSaWTCIVkalxHSllSS64kZja4VBGDNlJxVpoo5H5XLl8BnUXNJ7\
-      EPrdC4LiBXGtllx3kXFdhRtdTU7/xUEzVpgYvfHquwLgFWHOZGFvBC+I83v9LwWA\
-      dk02iFPj0LaYRvvPCQR5w9tVAARL7qp4WU5+8A1BpZu3H9Xz7GYiUvcQgxjQjTnf\
-      4Xps4R0c6sh+7V4Ad75C0UVDgalPqbUDEEyaH8Y/eTzqRgNXZWzXvitrAaB9GUjc\
-      N2BSP6/obSbhM/zMXori4lvYR1DlIn+ITLGE5ny2Kd3dhMk1WKHYommeyBUa9Oxt\
-      ssO4VET2obkQVKPF3xnfqa2dvZH6od1owxMJGd3k47ASv5IM057XACPd/P61BRiJ\
-      jTL7C22zidRsgP0DJSdWqPB4LigAc6F61T1nk6FqpjifvJBEMjsVHpL0Dqk2kHBS\
-      HoitkQSIoMt71FYFa+d91S0Cguh8P7SSylfkEhLngBvaoQB8sHiNB9I2jPHnMh9M\
-      xOPIbqULlQsa7LUx0XtYmkRp/MrhYtzUT7IUtxZHtl3aa5yE6Hgw="
-    - secure: "DcsMf2p5/VLPTeXh7CWtrjNskhCGoamPGlDPLG3u5Xp4nTP9nKxJ1T3\
-      DkhEHJfeayH5rWJ52yhFXSuOfX+BYeqa5unGmf+4L4TcYfR1qHnUk/GQtoxxqncv\
-      dDQSN9su/vRBWX8AHBpkGp1nOA5tQUz4H61resZRoeDoHBLRWtPDzIbr2yFxkCaj\
-      qhlZi0imc+e1+1n5stQ3fEi21qBhL0p06x5j7LwolfQaywXg9eiiE5IgZA541gxW\
-      nYaAKcKWc5W16GwnWEkEuFK8IZDXot9HLQjKnHu4N5Y4Tqpna1JQ1R/J/oE6ViTq\
-      s8QSxXr1bt3tz+iZPPKsnYETFS21lOhqqUg29ACRMyRVEjOzq5ATtycThW3yUMeU\
-      gXkewFOmB6xAeJlMrAqdV7zoDDgrYpkTZAs5rdsQEHuSMiJRQzDDp6mynEGrK9Nw\
-      vBYtf9C76mKFVq02RIC3dzmyIsRK6Jd23oy3juKBNRBXJfg9v55RofghKlwlWZhd\
-      fabjmiqAwe73fkRN7iY/S4cTgzvEMuro1C9FR7oVaNk5pfdW+ZlJiWhCGnefFlxo\
-      VGTxSJPmpQojbpgSr1ebMti/48o1xCpikYwXeLY7meEfdUPonIcrfT1G2StlOl+3\
-      8PXqytcqbAn+2T75Uzrpw5krBc6arBnyxkv1nYCCfYZ2xD1RI22k="
-    - secure: "mVqP/Kq8BDeTgFdQGSijbH8kBMKVgumbYSIYa5+dHYehlbNxwmGa+mT\
-      HVRewdOcmkR+tIFVxN++Ao22SA+KZv9/Y+6lGnruj8187HDOaNjDSXeTPzsYoSzO\
-      IZDKzza7RXG8ZqQlOXQbqpAHBlUpvQQHSOc4sjtoiTlTzPieK76uqd/5j5YaDRWB\
-      AoyD0Xu043rFQLDjDnYNvxl9l67LLib8DCHJWW/Bkr6VNQNcoxvFQFoRKJjwC0KL\
-      WBKouyJGllP4ZN3iOUdCsut4ol8zybosTqv3KaPiNEGM3w2X/sqBKjgzrLWxuxtY\
-      CkGt38GvtcJo3hWCEMM1fnhzxL2sm933x/JzvkP7sVvwvFHeEnL2ScdnFwOQU/EH\
-      4HbO0rWS8wLVxbQQjMoQkyh8lXgqYHDMItGFKzYTwutH5IiacRpKimsY1+2n5PNx\
-      rtxhPZ3mqNf6HSCrE7xWZ6HZ3qwmThXAPTnOVPhqRBuvOmuAqgTunOHn5xP7FWZi\
-      AqGHDcSY6sNzbMuMQjqIIxduTqlXXYBQBL6I6fTjSltuUKpEYZYY7bjlAPTVu+wJ\
-      KfNbRKotCmSxW0Q5XYiJcanIBy5XOX5voK1XD8aPwQD3iSgv6vonMcqHQKwiD0J2\
-      9p7OeyWW7TiJDwWihsy13Mrt2TZkf7j3OFw38Kq6384jQ8ozeAfw="
+    - AWS_DEFAULT_REGION="us-east-1"
+    # AWS_ACCESS_KEY_ID
+    - secure: "o3ToIvNo72KWyQn44mqmDGQa5LWz/wpPdJZMyVpugg+H+SzPQ9Riyl9\
+      3Gip4VlN5CHLRZvsXi3JsGN/nunbN+xZxuGXwEWoET8wkmWV3V4uve2An+4eHG6r\
+      v0xGLrTo+yWKMkcsnXHZdNCCGtC81UwCxI3n6tUzk9OtU0TBi8KW/2ZBnFox0kwr\
+      2C/S//R5egVl2i25GIOS8IHdTBPIZEfvYf7TczJVtaLjzsusCM4kyn4WC/Wc0SUI\
+      gdGxmj8I18MCHPFXazm6ltF6IUe1LwerERXvfeRSbi5bhD8JlmGRjbnzCLHq0WdW\
+      9j8Hqeq7zGSvfUWPjDZp7ObgC/jShflaSfHrvRJDdpeSn/zn1Ar/aSXOe/0uoXRn\
+      XzBOGxwrbOZ7p6UrDJqYu4QecRMKOWwf5D5+27ehKUp5tQ8jUeIp7C4g46W8rXVY\
+      ribP2e8J1Y1dy4t1GRrFo2K7sLU8rlCz+1N/hlswihVlCTD53jMg/nhdkhg41U8x\
+      MoZ+L139+cahIM9L3sjKMYaGc5SVuSBoMLQQCklHmvjL85o+ut1r2vdye7IY0Esw\
+      TDS6D8XOSg/ctK57RDUhEOsd65NMn+BO9aOaBY/PElBcweBf33IigffRP3Knh3Xv\
+      vIJXz7PTT2VX6dPkrHLDuVCMQyIWbIb+gKjDi4Riy28B3M0Pzxho="
+    # AWS_SECRET_ACCESS_KEY
+    - secure: "K33aZe/R4oIE5VVY5+x076HE7+/TdPswvCW7HS3KKSRq9kmMvP/m9zX\
+      o882xsvGh1UpxOCpuFWbyEQOukHm0aumtzNjkPbrnNB889jqOxsakql7pvetLvAc\
+      T3JlfADx8aXlMjtz7mnsLjveKSI7HPc7eQipbNHlLC7cpAe++nQw0sKjCD3LL5Zb\
+      MB4BCAgI8cTk2sbTg8eUA/qns/Cse1gTRp2q86XdfHV0++m6RA3kzbwluA/TQi83\
+      0aQiasAbiUVCrZE8QseAMPArkKiy5ZvTYxqcNFsfZTvb50gPtklNvgM9P3uze6PG\
+      jRXW41YRLwFlWrAdp/r9IJa2FE1RO/vFDAcjMo++V5FvE4rgCsHocnQaN8Zz0Kos\
+      8Lj5LIj+bTl+pOR7tLdE6Z5/jBlEWljr6O7oR5dj7o+gAOlrEIM3zIG4JPC1Imor\
+      EdnYRH76kXp9/aQic46yJqJMwieFH3HluIULP2Fe/I0fxgxcC4DSuQq8lE32E1kR\
+      xPSmc+iPj3NOH7MuosGhxGOKMzAR+Zk1YVubaBMO9uyRKG6POfzz92sHNhrMdUB0\
+      g5ju4P65ghTHk+49JlduGOajJM8PbO7UG56SPy1sLnroizDa3uhtlyHb+VjUV1WH\
+      OjDRu5Qgm2Tm7ou3AhZFI9B3DWIYQlHZN6AXhZVSCDmOW/nQI+as="
 
 # Cache pip packages and pre-commit plugins to speed up builds
 cache:
@@ -51,7 +43,7 @@ cache:
 before_install:
   - >
     wget
-    https://releases.hashicorp.com/terraform/0.12.1/terraform_0.12.1_linux_amd64.zip
+    https://releases.hashicorp.com/terraform/0.12.3/terraform_0.12.3_linux_amd64.zip
     -O terraform.zip
   - sudo unzip terraform.zip -d /opt/terraform
   - sudo ln -s /opt/terraform/terraform /usr/bin/terraform
