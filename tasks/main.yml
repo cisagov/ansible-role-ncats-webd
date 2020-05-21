@@ -11,7 +11,7 @@
 
 - name: Download and untar the ncats-webd tarball
   unarchive:
-    src: "https://api.github.com/repos/jsf9k/ncats-webd/tarball/develop?\
+    src: "https://api.github.com/repos/jsf9k/ncats-webd/tarball/bugfix/pin_gevent_to_1.5.0?\
     access_token={{ github_oauth_token }}"
     dest: /var/local/ncats-webd
     remote_src: yes
