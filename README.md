@@ -1,11 +1,11 @@
 # ansible-role-ncats-webd #
 
-[![Build Status](https://travis-ci.com/cisagov/ansible-role-ncats-webd.svg?branch=develop)](https://travis-ci.com/cisagov/ansible-role-ncats-webd)
+[![GitHub Build Status](https://github.com/cisagov/ansible-role-ncats-webd/workflows/build/badge.svg)](https://github.com/cisagov/ansible-role-ncats-webd/actions)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/cisagov/ansible-role-ncats-webd.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-ncats-webd/alerts/)
 [![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/cisagov/ansible-role-ncats-webd.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-ncats-webd/context:python)
 
 An Ansible role for installing
-[jsf9k/ncats-webd](https://github.com/jsf9k/ncats-webd).
+[cisagov/ncats-webd](https://github.com/cisagov/ncats-webd).
 
 ## Requirements ##
 

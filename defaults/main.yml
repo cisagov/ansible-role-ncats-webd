@@ -1,5 +1,3 @@
 ---
-# vars file for ncats_webd
-
 # The GitHub OAUTH token
 github_oauth_token: "{{ lookup('aws_ssm', '/github/oauth_token') }}"

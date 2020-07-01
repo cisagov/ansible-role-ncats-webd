@@ -1,8 +1,8 @@
 ---
 galaxy_info:
   author: Shane Frasier
-  description: Install jsf9k/ncats-webd.
-  company: CISA NCATS
+  description: Install ncats-webd.
+  company: CISA Cyber Assessments
   license: CC0
   min_ansible_version: 2.0
   platforms:
