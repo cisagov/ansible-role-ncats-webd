@@ -3,15 +3,16 @@ galaxy_info:
   author: Shane Frasier
   description: Install ncats-webd.
   company: CISA Cyber Assessments
+  galaxy_tags:
+    - ncats
+    - webd
   license: CC0
   min_ansible_version: 2.0
   platforms:
     - name: Debian
       versions:
         - stretch
-  galaxy_tags:
-    - ncats
-    - webd
+  role_name: ncats_webd
 
 dependencies:
   - src: https://github.com/cisagov/ansible-role-cyhy-core
