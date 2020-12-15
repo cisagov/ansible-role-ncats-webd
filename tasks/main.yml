@@ -15,7 +15,7 @@
   # but we definitely don't want to do that here since it will
   # override the permissions on the files in the archive.
   unarchive: # noqa 208
-    src: "https://api.github.com/repos/cisagov/ncats-webd/tarball/develop"
+    src: "https://api.github.com/repos/cisagov/ncats-webd/tarball/bugfix/updateFlask-SocketIO_pin"
     dest: /var/local/ncats-webd
     remote_src: yes
     extra_opts:
