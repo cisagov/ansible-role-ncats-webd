@@ -18,12 +18,6 @@ def test_packages(host, pkg):
     assert pkg in host.pip_package.get_packages()
 
 
-@pytest.mark.parametrize("f", ["/var/local/ncats-webd"])
-def test_files(host, f):
-    """Test that the expected files and directories are present."""
-    assert host.file(f).exists
-
-
 @pytest.mark.parametrize("command", ["gunicorn"])
 def test_commands(host, command):
     """Test that the expected commands are present."""
