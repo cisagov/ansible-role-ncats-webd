@@ -2,28 +2,8 @@
 # tasks file for ncats_webd
 
 #
-# Grab the ncats-webd code
-#
-- name: Create the /var/local/ncats-webd directory
-  file:
-    mode: 0755
-    path: /var/local/ncats-webd
-    state: directory
-
-- name: Download and untar the ncats-webd tarball
-  # ansible-lint E208 gives an error if we don't specify the mode,
-  # but we definitely don't want to do that here since it will
-  # override the permissions on the files in the archive.
-  unarchive: # noqa 208
-    src: "https://api.github.com/repos/cisagov/ncats-webd/tarball/improvement/blacken_codebase"
-    dest: /var/local/ncats-webd
-    remote_src: yes
-    extra_opts:
-      - "--strip-components=1"
-
-#
 # Install ncats-webd
 #
 - name: Install ncats-webd
   pip:
-    name: file:///var/local/ncats-webd
+    name: https://api.github.com/repos/cisagov/ncats-webd/tarball/improvement/integrate_skeleton
