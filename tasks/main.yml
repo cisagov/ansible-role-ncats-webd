@@ -5,13 +5,13 @@
 # Grab the ncats-webd code
 #
 - name: Create the /var/local/ncats-webd directory
-  file:
+  ansible.builtin.file:
     mode: 0755
     path: /var/local/ncats-webd
     state: directory
 
 - name: Download and untar the ncats-webd tarball
-  unarchive:
+  ansible.builtin.unarchive:
     src: "https://api.github.com/repos/cisagov/ncats-webd/tarball/develop"
     dest: /var/local/ncats-webd
     remote_src: yes
@@ -22,5 +22,5 @@
 # Install ncats-webd
 #
 - name: Install ncats-webd
-  pip:
+  ansible.builtin.pip:
     name: file:///var/local/ncats-webd
