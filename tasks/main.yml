@@ -1,26 +1,7 @@
 ---
 # tasks file for ncats_webd
 
-#
-# Grab the ncats-webd code
-#
-- name: Create the /var/local/ncats-webd directory
-  ansible.builtin.file:
-    mode: 0755
-    path: /var/local/ncats-webd
-    state: directory
-
-- name: Download and untar the ncats-webd tarball
-  ansible.builtin.unarchive:
-    src: "https://api.github.com/repos/cisagov/ncats-webd/tarball/develop"
-    dest: /var/local/ncats-webd
-    remote_src: yes
-    extra_opts:
-      - "--strip-components=1"
-
-#
-# Install ncats-webd
-#
-- name: Install ncats-webd
+- name: Install the ncats-webd package
   ansible.builtin.pip:
-    name: file:///var/local/ncats-webd
+    executable: /usr/bin/pip2
+    name: https://api.github.com/repos/cisagov/ncats-webd/tarball/develop
