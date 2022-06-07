@@ -1,6 +1,21 @@
 ---
 # tasks file for ncats_webd
 
+- name: Install system versions of the Python packages that ncats-webd needs
+  ansible.builtin.package:
+    name:
+      # Note that the gunicorn package is the command and python-gunicorn
+      # is the Python 2 library.
+      - gunicorn
+      - python-cffi
+      - python-dateutil
+      - python-docopt
+      - python-flask
+      - python-gevent
+      - python-gunicorn
+      - python-netaddr
+      - python-schedule
+
 - name: Install the ncats-webd package
   ansible.builtin.pip:
     executable: /usr/bin/pip2

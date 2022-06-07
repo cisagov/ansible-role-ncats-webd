@@ -12,16 +12,29 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
 ).get_hosts("all")
 
 
+@pytest.mark.parametrize(
+    "pkg",
+    [
+        "gunicorn",
+        "python-cffi",
+        "python-dateutil",
+        "python-docopt",
+        "python-flask",
+        "python-gevent",
+        "python-gunicorn",
+        "python-netaddr",
+        "python-schedule",
+    ],
+)
+def test_apt_packages(host, pkg):
+    """Test that the apt packages were installed."""
+    assert host.package(pkg).is_installed
+
+
 @pytest.mark.parametrize("pkg", ["ncats-webd"])
-def test_packages(host, pkg):
+def test_pip_packages(host, pkg):
     """Test that the pip packages were installed."""
     assert pkg in host.pip_package.get_packages()
-
-
-@pytest.mark.parametrize("f", ["/var/local/ncats-webd"])
-def test_files(host, f):
-    """Test that the expected files and directories are present."""
-    assert host.file(f).exists
 
 
 @pytest.mark.parametrize("command", ["gunicorn"])
