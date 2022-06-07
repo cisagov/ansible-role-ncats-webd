@@ -24,8 +24,8 @@ platforms:
   - name: debian9
     image: debian:stretch-slim
     dockerfile: Dockerfile_debian_9.j2
-  # - name: debian10
-  #   image: debian:buster-slim
+  - name: debian10
+    image: debian:buster-slim
   # - name: debian11
   #   image: debian:bullseye-slim
   # - name: debian12
@@ -36,8 +36,8 @@ platforms:
   #   image: fedora:34
   # - name: fedora35
   #   image: fedora:35
-  # - name: ubuntu18
-  #   image: ubuntu:bionic
+  - name: ubuntu18
+    image: ubuntu:bionic
   # - name: ubuntu20
   #   image: ubuntu:focal
 provisioner:

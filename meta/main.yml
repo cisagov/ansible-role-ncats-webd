@@ -18,6 +18,10 @@ galaxy_info:
     - name: Debian
       versions:
         - stretch
+        - buster
+    - name: Ubuntu
+      versions:
+        - bionic
   role_name: ncats_webd
 
 dependencies:
