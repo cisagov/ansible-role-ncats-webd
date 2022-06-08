@@ -15,6 +15,8 @@ galaxy_info:
   min_ansible_version: 2.10
   namespace: cisagov
   platforms:
+    # ncats-webd is still Python 2 and with distributions ending support for
+    # Python 2 we can only support a limited number of platforms.
     - name: Debian
       versions:
         - stretch

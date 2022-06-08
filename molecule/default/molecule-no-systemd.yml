@@ -16,9 +16,8 @@ lint: |
   ansible-lint
   flake8
 platforms:
-  # ncats-webd is Python 2 only, and the only platform we currently support
-  # for Python 2 is Debian Stretch. Until this restriction changes we need to
-  # disable testing for all other platforms.
+  # ncats-webd is still Python 2 and with distributions ending support for
+  # Python 2 we can only support a limited number of platforms.
   # - name: amazonlinux2
   #   image: amazonlinux:2
   - name: debian9
