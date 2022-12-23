@@ -1,8 +1,7 @@
 # ansible-role-ncats-webd #
 
 [![GitHub Build Status](https://github.com/cisagov/ansible-role-ncats-webd/workflows/build/badge.svg)](https://github.com/cisagov/ansible-role-ncats-webd/actions)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/cisagov/ansible-role-ncats-webd.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-ncats-webd/alerts/)
-[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/cisagov/ansible-role-ncats-webd.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/cisagov/ansible-role-ncats-webd/context:python)
+[![CodeQL](https://github.com/cisagov/ansible-role-ncats-webd/workflows/CodeQL/badge.svg)](https://github.com/cisagov/ansible-role-ncats-webd/actions/workflows/codeql-analysis.yml)
 
 An Ansible role for installing
 [cisagov/ncats-webd](https://github.com/cisagov/ncats-webd).
@@ -83,8 +82,10 @@ Here's how to use it in a playbook:
 - hosts: all
   become: yes
   become_method: sudo
-  roles:
-    - ncats_webd
+  tasks:
+    - name: Install cisagov/ncats-webd
+      ansible.builtin.include_role:
+        name: ncats_webd
 ```
 
 ## Contributing ##
