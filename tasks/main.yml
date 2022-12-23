@@ -19,4 +19,10 @@
 - name: Install the ncats-webd package
   ansible.builtin.pip:
     executable: /usr/bin/pip2
-    name: https://api.github.com/repos/cisagov/ncats-webd/tarball/develop
+    name:
+      # This pin is only strictly necessary on Debian Stretch. It can be
+      # removed once cisagov/skeleton-ansible-role#124 is merged and trickles
+      # down. Please see cisagov/ansible-role-ncats-webd#61 for more
+      # information.
+      - greenlet < 2
+      - https://api.github.com/repos/cisagov/ncats-webd/tarball/develop
