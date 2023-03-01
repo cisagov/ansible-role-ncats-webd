@@ -1,8 +1,19 @@
 ---
+dependencies:
+  - src: https://github.com/cisagov/ansible-role-cyhy-core
+    name: cyhy_core
+  - src: https://github.com/cisagov/ansible-role-pip
+    name: pip
+    vars:
+      install_pip2: true
+  - src: https://github.com/cisagov/ansible-role-python
+    name: python
+    vars:
+      install_python2: true
 galaxy_info:
   author: Shane Frasier
-  description: Install ncats-webd.
   company: CISA Cyber Assessments
+  description: Install ncats-webd.
   galaxy_tags:
     - ncats
     - webd
@@ -25,15 +36,3 @@ galaxy_info:
       versions:
         - bionic
   role_name: ncats_webd
-
-dependencies:
-  - src: https://github.com/cisagov/ansible-role-cyhy-core
-    name: cyhy_core
-  - src: https://github.com/cisagov/ansible-role-pip
-    name: pip
-    vars:
-      install_pip2: true
-  - src: https://github.com/cisagov/ansible-role-python
-    name: python
-    vars:
-      install_python2: true
