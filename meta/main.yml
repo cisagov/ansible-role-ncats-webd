@@ -1,7 +1,5 @@
 ---
 dependencies:
-  - src: https://github.com/cisagov/ansible-role-cyhy-core
-    name: cyhy_core
   - src: https://github.com/cisagov/ansible-role-pip
     name: pip
     vars:
