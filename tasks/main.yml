@@ -1,6 +1,12 @@
 ---
 # tasks file for ncats_webd
 
+- name: Install cisagov/cyhy-core
+  ansible.builtin.include_role:
+    name: cyhy_core
+  vars:
+    cyhy_core_maxmind_license_key: "{{ ncats_webd_maxmind_license_key }}"
+
 - name: Install system versions of the Python packages that ncats-webd needs
   ansible.builtin.package:
     name:
