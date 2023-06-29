@@ -1,6 +1,12 @@
 ---
 # tasks file for ncats_webd
 
+- name: Install cisagov/cyhy-core
+  ansible.builtin.include_role:
+    name: cyhy_core
+  vars:
+    cyhy_core_maxmind_license_key: "{{ ncats_webd_maxmind_license_key }}"
+
 - name: Install system versions of the Python packages that ncats-webd needs
   ansible.builtin.package:
     name:
@@ -20,9 +26,5 @@
   ansible.builtin.pip:
     executable: /usr/bin/pip2
     name:
-      # This pin is only strictly necessary on Debian Stretch. It can be
-      # removed once cisagov/skeleton-ansible-role#124 is merged and trickles
-      # down. Please see cisagov/ansible-role-ncats-webd#61 for more
-      # information.
-      - greenlet < 2
+      - greenlet
       - https://api.github.com/repos/cisagov/ncats-webd/tarball/develop
