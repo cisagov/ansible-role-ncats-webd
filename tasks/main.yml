@@ -18,6 +18,7 @@
       - python-docopt
       - python-flask
       - python-gevent
+      - python-greenlet
       - python-gunicorn
       - python-netaddr
       - python-schedule
@@ -26,5 +27,4 @@
   ansible.builtin.pip:
     executable: /usr/bin/pip2
     name:
-      - greenlet
       - https://api.github.com/repos/cisagov/ncats-webd/tarball/develop
