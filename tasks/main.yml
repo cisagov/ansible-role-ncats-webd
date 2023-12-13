@@ -27,4 +27,4 @@
   ansible.builtin.pip:
     executable: /usr/bin/pip2
     name:
-      - https://api.github.com/repos/cisagov/ncats-webd/tarball/develop
+      - https://api.github.com/repos/cisagov/ncats-webd/tarball/testing/mcdonnnj
