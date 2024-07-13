@@ -63,9 +63,9 @@ None.
 
 | Variable | Description | Default | Required |
 |----------|-------------|---------|----------|
-| ncats_webd_install_geoipupdate | Whether to install the MaxMind geoipupdate tool. | `false` | No |
-| ncats_webd_maxmind_account_id | The MaxMind account ID for access to a GeoIP2 database subscription. | n/a | Yes |
-| ncats_webd_maxmind_license_key | The MaxMind license key that provided access to a GeoIP2 database subscription. | n/a | Yes |
+| ncats\_webd\_install\_geoipupdate | Whether to install the MaxMind geoipupdate tool. | `false` | No |
+| ncats\_webd\_maxmind\_account\_id | The MaxMind account ID for access to a GeoIP2 database subscription. | n/a | Yes |
+| ncats\_webd\_maxmind\_license\_key | The MaxMind license key that provided access to a GeoIP2 database subscription. | n/a | Yes |
 
 ## Dependencies ##
 
