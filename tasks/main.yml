@@ -5,6 +5,8 @@
   ansible.builtin.include_role:
     name: cyhy_core
   vars:
+    cyhy_core_install_geoipupdate: "{{ ncats_webd_install_geoipupdate }}"
+    cyhy_core_maxmind_account_id: "{{ ncats_webd_maxmind_account_id }}"
     cyhy_core_maxmind_license_key: "{{ ncats_webd_maxmind_license_key }}"
 
 - name: Install system versions of the Python packages that ncats-webd needs
