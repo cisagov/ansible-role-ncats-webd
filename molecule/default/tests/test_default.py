@@ -21,6 +21,7 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
         "python-docopt",
         "python-flask",
         "python-gevent",
+        "python-greenlet",
         "python-gunicorn",
         "python-netaddr",
         "python-schedule",
