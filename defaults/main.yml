@@ -2,3 +2,6 @@
 # This mirrors the defaults in cisagov/ansible-role-cyhy-core and
 # cisagov/ansible-role-geoip2
 ncats_webd_install_geoipupdate: false
+
+# The version of cisagov/ncats-webd to use; must be a valid git reference
+ncats_webd_version: v1.0.0

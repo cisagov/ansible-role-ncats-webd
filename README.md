@@ -110,6 +110,7 @@ None.
 | ncats\_webd\_install\_geoipupdate | Whether to install the MaxMind geoipupdate tool. | `false` | No |
 | ncats\_webd\_maxmind\_account\_id | The MaxMind account ID for access to a GeoIP2 database subscription. | n/a | Yes |
 | ncats\_webd\_maxmind\_license\_key | The MaxMind license key that provided access to a GeoIP2 database subscription. | n/a | Yes |
+| ncats\_webd\_version | The version of cisagov/ncats-webd to install; must be a valid git reference. | `v1.0.0` | No |
 
 ## Dependencies ##
 
