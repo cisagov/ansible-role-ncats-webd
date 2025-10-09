@@ -32,7 +32,7 @@ def test_apt_packages(host, pkg):
     assert host.package(pkg).is_installed
 
 
-@pytest.mark.parametrize("pkg_name,pkg_version", [("ncats-webd", "1.0.0")])
+@pytest.mark.parametrize("pkg_name,pkg_version", [("ncats-webd", "1.0.1")])
 def test_pip_packages(host, pkg_name, pkg_version):
     """Test that the pip packages were installed."""
     pip_packages = host.pip.get_packages(pip_path="/usr/bin/pip2")
